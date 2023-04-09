@@ -6,5 +6,8 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage('Run') {
+            sh 'npm start'
+        }
     }
 }
