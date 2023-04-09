@@ -9,7 +9,9 @@ pipeline {
 
         stage('Run') {
             steps {
-                sh 'BUILD_ID=dontKillMe npm start &'
+                sh 'npm start'
+                input message: 'Finished using the web site? (Click "Proceed" to continue)'
+                sh 'pkill node'
             }
         }
     }
