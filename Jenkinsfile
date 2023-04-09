@@ -15,7 +15,7 @@ pipeline {
     }
     post {
         success {
-            sh 'npm start &'
+            sh 'npm start'
         }
     }
 }
