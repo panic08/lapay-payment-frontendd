@@ -10,7 +10,7 @@ pipeline {
         stage('Run') {
             steps {
                 timeout(time: 7, unit: 'MINUTES') {
-                    sh 'npm start'
+                    sh 'BUILD_ID=dontKillMe npm start &'
                 }
             }
         }
