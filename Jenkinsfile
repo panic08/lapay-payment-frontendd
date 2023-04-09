@@ -9,9 +9,13 @@ pipeline {
 
         stage('Run') {
             steps {
-                sh "chmod +x -R ${env.WORKSPACE}"
-                sh 'jenkins/scripts/start.sh'
+                sh 'echo "sheeesh"'
             }
+        }
+    }
+    post {
+        success {
+            sh 'npm start &'
         }
     }
 }
