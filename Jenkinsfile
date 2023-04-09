@@ -9,7 +9,9 @@ pipeline {
 
         stage('Run') {
             steps {
-                sh 'npm start'
+                timeout(time: 7, unit: 'MINUTES') {
+                    sh 'npm start'
+                }
             }
         }
     }
