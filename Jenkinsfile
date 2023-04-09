@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Stop') {
             steps {
-                sh 'pkill node'
+                sh 'npm stop'
             }
         }
         stage('Run') {
