@@ -72,7 +72,7 @@ function App() {
             ))}
       <div className={style.dop}>
         <input onChange={setValueInput} value={handleInput} className={style.input}/>
-        <a onClick={sendMessage} className={style.button}>Submit</a>
+        <a onClick={sendMessage} className={style.button}>Отправить</a>
       </div>
     </div>
   );
