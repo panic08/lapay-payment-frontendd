@@ -16,9 +16,9 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'chmod 777 .'
-                sh 'sudo docker-compose down'
-                sh 'sudo docker-compose up -d'
+                sh 'sudo chmod 777 ./docker-compose.yml'
+                sh 'docker-compose down'
+                sh 'docker-compose up -d'
             }
         }
     }
