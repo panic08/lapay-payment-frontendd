@@ -16,7 +16,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'docker stop $(docker ps -aq) && docker rm $(docker ps -aq)'
+                sh 'docker-compose down'
                 sh 'docker-compose up -d'
             }
         }
