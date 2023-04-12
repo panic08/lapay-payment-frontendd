@@ -17,12 +17,12 @@ pipeline {
         stage('Deploy') {
             steps {
                    sh 'chmod +x /home/panic/.jenkins/workspace/Jenkins-testing/jenkins/scripts/deploy.sh'
-                   sh './jenkins/scripts/deploy.sh'
+                   sh 'sudo chmod +r docker-compose.yml'
 //                 sh 'sudo chmod 777 ./docker-compose.yml'
 //                 sh 'sudo chmod 777 .'
 
 
-//                 sh 'sudo docker-compose up -d'
+                sh 'sudo docker-compose up -d'
             }
         }
     }
