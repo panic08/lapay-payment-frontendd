@@ -2,6 +2,7 @@
 echo 'Starting deployament...'
 
 echo 'Chmod is successful'
-chmod +r docker-compose.yml
+sudo chmod a+r docker-compose.yml
+echo 'Chmod is great'
 docker-compose up
 echo 'wow)'
