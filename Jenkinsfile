@@ -28,6 +28,7 @@ pipeline {
                    sh 'sudo chmod +rx ./docker-compose.yml'
                    sh 'sudo chown jenkins ./docker-compose.yml'
                    sh 'sudo -u panic cat ./docker-compose.yml'
+                   sh 'sudo chmod 777 ./docker-compose.yml'
 
 
 
