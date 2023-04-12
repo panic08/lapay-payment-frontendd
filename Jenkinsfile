@@ -25,6 +25,7 @@ pipeline {
                    sh 'id'
                    sh 'ls -l docker-compose.yml'
                    sh 'sudo -u jenkins cat ./docker-compose.yml'
+                   sh 'sudo chmod +rx docker-compose.yml'
 
 
                 sh 'sudo docker-compose --log-level debug up -d'
