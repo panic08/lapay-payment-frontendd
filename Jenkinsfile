@@ -20,6 +20,7 @@ pipeline {
                    sh 'sudo chmod +r docker-compose.yml'
                    sh 'sudo chmod +x docker-compose.yml'
                    sh 'docker-compose version'
+                   sh 'docker ps'
 //                 sh 'sudo chmod 777 ./docker-compose.yml'
 //                 sh 'sudo chmod 777 .'
 
