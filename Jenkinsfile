@@ -23,6 +23,7 @@ pipeline {
                    sh 'sudo docker ps'
                    sh 'whoami'
                    sh 'id'
+                   sh 'ls -l docker-compose.yml'
 
 
                 sh 'sudo docker-compose up -d'
