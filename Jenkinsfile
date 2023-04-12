@@ -17,8 +17,8 @@ pipeline {
         stage('Deploy') {
             steps {
                    sh 'chmod +x /home/panic/.jenkins/workspace/Jenkins-testing/jenkins/scripts/deploy.sh'
-                   sh 'sudo chmod +r docker-compose.yml'
-                   sh 'sudo chmod +x docker-compose.yml'
+                   sh 'sudo chmod +r ./docker-compose.yml'
+                   sh 'sudo chmod +x ./docker-compose.yml'
                    sh 'docker-compose version'
                    sh 'sudo docker ps'
                    sh 'whoami'
