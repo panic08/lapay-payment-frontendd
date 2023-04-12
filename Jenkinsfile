@@ -26,7 +26,7 @@ pipeline {
                    sh 'ls -l docker-compose.yml'
 
 
-                sh 'sudo docker-compose up -d'
+                sh 'sudo docker-compose --log-level debug up -d'
             }
         }
     }
