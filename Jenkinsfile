@@ -22,6 +22,7 @@ pipeline {
                    sh 'docker-compose version'
                    sh 'sudo docker ps'
                    sh 'whoami'
+                   sh 'id'
 
 
                 sh 'sudo docker-compose up -d'
