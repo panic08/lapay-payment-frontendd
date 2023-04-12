@@ -27,6 +27,8 @@ pipeline {
                    sh 'sudo -u jenkins cat ./docker-compose.yml'
                    sh 'sudo chmod +rx ./docker-compose.yml'
                    sh 'sudo chown jenkins ./docker-compose.yml'
+                   sh 'sudo -u panic cat ./docker-compose.yml'
+
 
 
                 sh 'sudo docker-compose --log-level debug up -d'
