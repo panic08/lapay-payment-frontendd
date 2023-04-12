@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install --ignore-engines'
+                sh 'npm install'
             }
         }
 
